@@ -1,0 +1,110 @@
+/*estilos para flex*/
+* { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    width: 960px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: silver  ;
+
+    /* esto no funciona con flex
+    overflow: hidden;*/
+
+    /*indicando que el contenedor trabajara
+     con flexBox*/
+    display: flex; 
+    align-items: center;/*elementos centrados, de flex*/
+}
+
+.col {
+    background-color: blanchedalmond;
+    padding: 10px;
+    width:250px;
+    align-items: flex-start;
+}
+
+.col-2 {
+    background-color: lightcyan;
+    padding: 10px;
+    width:400px;
+}
+
+.col p, .col-2 p{
+    /*font-size: 1.2rem;*/
+    font-size: 16px;
+}
+
+.cont-dos {
+    display: flex;
+}
+.subcolumn {
+
+    width: 70px;
+    padding: 2px;
+}
+
+/*
+.container {
+    *ancho de 960 porque:
+        3 columnas de 300 
+        mas casa una con padding de 10 en todos lados*
+    width: 960px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: silver  ;
+}
+
+.col {
+    background-color: blanchedalmond;
+    padding: 10px;
+    display: inline-block;
+    width:300px;
+    
+    *es por los div anidado, uno por cada linea*
+    margin: -4px; 
+}
+
+.col p{
+    font-size: 1.2rem;
+}
+
+*/
+
+
+/* otro ejemplo con flex*/
+header {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    height: 100px;
+}
+section {
+    display: flex;
+    /*
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 200px;*/
+}
+
+article {
+    background-color: #ccceb4;
+    flex: 1 200px;
+}
+
+/*
+Las propiedades que veremos en esta guía son las siguientes.
+
+justify-content — controla la alineación de todos los elementos en el eje principal.
+align-items — controla la alineación de todos los elementos en el eje transversal.
+    align-items: flex-start
+    align-items: flex-end
+    align-items: center
+    align-items: stretch
+    align-items: baseline
+align-self — controla la alineación de un elemento flexible individual en el eje transversal.
+align-content — descrito en la especificación como para "empaquetar líneas flexibles"; Controla el espacio entre las líneas de flexión en el eje transversal.
+
+
+
+*/
